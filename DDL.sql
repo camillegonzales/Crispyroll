@@ -60,6 +60,13 @@ CREATE TABLE Ratings (
     FOREIGN KEY (user_id) REFERENCES Users(user_id) ON DELETE CASCADE
 );
 
+-- Insert example data into Studios table
+INSERT INTO Studios (studio_name, year_founded)
+VALUES
+    ('Nippon TV', 1952),
+    ('MAPPA', 2011),
+    ('CloverWorks', 2018);
+    
 -- Insert example data into Animes table
 INSERT INTO Animes (title, studio_id, num_episode)
 VALUES 
@@ -90,13 +97,6 @@ VALUES
     ((SELECT user_id FROM Users WHERE user_name='Pebbles44'), (SELECT anime_id FROM Animes WHERE title='The Promised Neverland')),
     ((SELECT user_id FROM Users WHERE user_name='PeppermintP'), (SELECT anime_id FROM Animes WHERE title='Hunter x Hunter')),
     ((SELECT user_id FROM Users WHERE user_name='wstr000'), (SELECT anime_id FROM Animes WHERE title='Attack on Titan'));
-
--- Insert example data into Studios table
-INSERT INTO Studios (studio_name, year_founded)
-VALUES
-    ('Nippon TV', 1952),
-    ('MAPPA', 2011),
-    ('CloverWorks', 2018);
 
 -- Insert example data into Ratings table
 INSERT INTO Ratings (user_id, anime_id, rating, review)
