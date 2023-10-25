@@ -36,7 +36,7 @@ CREATE TABLE Users (
     PRIMARY KEY (user_id) 
 );
 
--- Create Users_Animes intersection table\
+-- Create Users_Animes intersection table
 DROP TABLE IF EXISTS Users_Animes;
 CREATE TABLE Users_Animes (
     user_anime_id INT AUTO_INCREMENT NOT NULL,
