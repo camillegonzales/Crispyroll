@@ -7,6 +7,14 @@
 SET FOREIGN_KEY_CHECKS=0;
 SET AUTOCOMMIT = 0;
 
+-- Create Studios table
+CREATE OR REPLACE TABLE Studios (
+    studio_id INT AUTO_INCREMENT NOT NULL,
+    studio_name VARCHAR(45) NOT NULL,
+    year_founded INT NOT NULL,
+    PRIMARY KEY (studio_id)
+);
+
 -- Create Animes table
 CREATE OR REPLACE TABLE Animes (
     anime_id INT AUTO_INCREMENT NOT NULL,
@@ -33,14 +41,6 @@ CREATE OR REPLACE TABLE Users_Animes (
     PRIMARY KEY (user_anime_id),
     FOREIGN KEY (user_id) REFERENCES Users(user_id) ON DELETE CASCADE,
     FOREIGN KEY (anime_id) REFERENCES Animes(anime_id) ON DELETE CASCADE
-);
-
--- Create Studios table
-CREATE OR REPLACE TABLE Studios (
-    studio_id INT AUTO_INCREMENT NOT NULL,
-    studio_name VARCHAR(45) NOT NULL,
-    year_founded INT NOT NULL,
-    PRIMARY KEY (studio_id)
 );
 
 -- Create Ratings table
