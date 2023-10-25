@@ -48,7 +48,7 @@ CREATE OR REPLACE Ratings (
     rating_id INT AUTO_INCREMENT NOT NULL,
     user_id INT NOT NULL,
     anime_id INT NOT NULL,
-    rating INT, NOT NULL,
+    rating INT NOT NULL,
     review VARCHAR(218) NOT NULL,
     PRIMARY KEY (rating_id),
     FOREIGN KEY (anime_id) REFERENCES Animes(anime_id) ON DELETE CASCADE,
