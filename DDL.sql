@@ -8,7 +8,8 @@ SET FOREIGN_KEY_CHECKS=0;
 SET AUTOCOMMIT = 0;
 
 -- Create Studios table
-CREATE OR REPLACE TABLE Studios (
+DROP TABLE IF EXISTS Studios;
+CREATE TABLE Studios (
     studio_id INT AUTO_INCREMENT NOT NULL,
     studio_name VARCHAR(45) NOT NULL,
     year_founded INT NOT NULL,
@@ -16,7 +17,8 @@ CREATE OR REPLACE TABLE Studios (
 );
 
 -- Create Animes table
-CREATE OR REPLACE TABLE Animes (
+DROP TABLE IF EXISTS Animes;
+CREATE TABLE Animes (
     anime_id INT AUTO_INCREMENT NOT NULL,
     title VARCHAR(145) NOT NULL,
     studio_id INT NOT NULL,
@@ -26,15 +28,17 @@ CREATE OR REPLACE TABLE Animes (
 );
 
 -- Create Users table
-CREATE OR REPLACE TABLE Users (
+DROP TABLE IF EXISTS Users;
+CREATE TABLE Users (
     user_id INT AUTO_INCREMENT NOT NULL,
     user_name VARCHAR(45) NOT NULL,
     user_email VARCHAR(145) NOT NULL,
     PRIMARY KEY (user_id) 
 );
 
--- Create Users_Animes intersection table
-CREATE OR REPLACE TABLE Users_Animes (
+-- Create Users_Animes intersection table\
+DROP TABLE IF EXISTS Users_Animes;
+CREATE TABLE Users_Animes (
     user_anime_id INT AUTO_INCREMENT NOT NULL,
     user_id INT NOT NULL,
     anime_id INT NOT NULL,
@@ -44,7 +48,8 @@ CREATE OR REPLACE TABLE Users_Animes (
 );
 
 -- Create Ratings table
-CREATE OR REPLACE Ratings (
+DROP TABLE IF EXISTS Ratings;
+CREATE TABLE Ratings (
     rating_id INT AUTO_INCREMENT NOT NULL,
     user_id INT NOT NULL,
     anime_id INT NOT NULL,
