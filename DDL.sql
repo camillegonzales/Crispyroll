@@ -1,6 +1,7 @@
 -- Project Title: Crispyroll
 -- Group Name: Query Queens
 -- Group 50: Camille Gonzales, Jennifer Trainor
+-- CS340: Project Step 2 Draft
 
 
 -- Disable commits and foreign key checks at the beginning of the file
