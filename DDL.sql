@@ -1,8 +1,9 @@
 -- Project Title: Crispyroll
 -- Group Name: Query Queens
 -- Group 50: Camille Gonzales, Jennifer Trainor
--- CS340: Project Step 2 Draft
+-- CS340: Project Step 3 Draft
 
+-- DATA DEFINITION QUERIES: CREATE tables, INPUT example data
 
 -- Disable commits and foreign key checks at the beginning of the file
 SET FOREIGN_KEY_CHECKS=0;
