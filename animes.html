@@ -26,8 +26,6 @@
     <div id="browse" style="display: block">
         <table border="1" cellpadding="5">
             <tr>
-                <th><a href="#">New</a></th>
-                <th></th>
                 <th>ID</th>
                 <th>Title</th>
                 <th>Studio</th>
@@ -35,8 +33,6 @@
                 <th>Delete</th>
             </tr>
             <tr>
-                <td><a href="#">Edit</a></td>
-                <td><a href="#">Delete</a></td>
                 <td align="right">1</td>
                 <td>Hunter x Hunter</td>
                 <td>NipponTV</td>
@@ -46,8 +42,6 @@
                 </td>
             </tr>
             <tr>
-                <td><a href="#">Edit</a></td>
-                <td><a href="#">Delete</a></td>
                 <td align="right">2</td>
                 <td>Attack on Titan</td>
                 <td>MAPPA</td>
@@ -57,8 +51,6 @@
                 </td>
             </tr>
             <tr>
-                <td><a href="#">Edit</a></td>
-                <td><a href="#">Delete</a></td>
                 <td align="right">3</td>
                 <td>Terror in Resonance</td>
                 <td>MAPPA</td>
@@ -68,8 +60,6 @@
                 </td>
             </tr>
             <tr>
-                <td><a href="#">Edit</a></td>
-                <td><a href="#">Delete</a></td>
                 <td align="right">4</td>
                 <td>Jujutsu Kaisen</td>
                 <td>MAPPA</td>
@@ -79,8 +69,6 @@
                 </td>
             </tr>
             <tr>
-                <td><a href="#">Edit</a></td>
-                <td><a href="#">Delete</a></td>
                 <td align="right">5</td>
                 <td>The Promised Neverland</td>
                 <td>CloverWorks</td>
@@ -97,8 +85,9 @@
         <form id="addAnime">
             <legend><strong>Add Animes</strong></legend>
             <fieldset class="fields">
-                <label> Username </label> <input type="text" name="name">
-                <label> Email </label> <input type="text" name="population">
+                <label> Title </label> <input type="text" name="title" value="Hunter x Hunter">
+                <label> Studio </label> <input type="text" name="studio" value="NipponTV">
+                <label> Num Episodes </label> <input type="number" name="episodes" value="148">
             </fieldset>
             <div class="btn-container">
                 <input class="btn" type="submit" id="addAnime" value="Add an Anime">
@@ -112,7 +101,6 @@
         <form id="updateAnime">
             <legend><strong>Update Anime</strong></legend>
             <fieldset class="fields">
-                <label>ID:</label> 1
                 <label> Title </label> <input type="text" name="title" value="Hunter x Hunter">
                 <label> Studio </label> <input type="text" name="studio" value="NipponTV">
                 <label> Num Episodes </label> <input type="number" name="episodes" value="148">
