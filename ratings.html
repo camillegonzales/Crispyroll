@@ -29,6 +29,8 @@
                 <th><a href="#">New</a></th>
                 <th></th>
                 <th class="id-cell">ID</th>
+                <th>User</th>
+                <th>Anime</th>
                 <th>Rating</th>
                 <th>Review</th>
             </tr>
@@ -36,13 +38,19 @@
                 <td><a href="#">Edit</a></td>
                 <td><a href="#">Delete</a></td>
                 <td align="right">1</td>
+                
+                <td>Honestliz</td>
+                <td>Hunter x Hunter</td>
                 <td>5</td>
                 <td>My favorite anime of all time!!</td>
             </tr>
             <tr>
                 <td><a href="#">Edit</a></td>
                 <td><a href="#">Delete</a></td>
-                <td align="right">2</td>
+                <td align="right">1</td>
+                
+                <td>Honestliz</td>
+                <td>Jujutsu Kaisen</td>
                 <td>5</td>
                 <td>One of the best animes out there, the plot is so
                     thought out and the characters are all brilliantly
@@ -51,7 +59,9 @@
             <tr>
                 <td><a href="#">Edit</a></td>
                 <td><a href="#">Delete</a></td>
-                <td align="right">3</td>
+                <td align="right">1</td>
+                <td>Honestliz</td>
+                <td>Terror in Resonance</td>
                 <td>5</td>
                 <td>Really sad but very well written and unique
                 </td>
@@ -59,14 +69,18 @@
             <tr>
                 <td><a href="#">Edit</a></td>
                 <td><a href="#">Delete</a></td>
-                <td align="right">4</td>
+                <td align="right">1</td>
+                <td>Serexolik</td>
+                <td>The Promised Neverland</td>
                 <td>3</td>
                 <td>Season 1 was amazing, but season 2 was really bad
                 </td>
             <tr>
                 <td><a href="#">Edit</a></td>
                 <td><a href="#">Delete</a></td>
-                <td align="right">5</td>
+                <td align="right">1</td>
+                <td>PeppermintP</td>
+                <td>Hunter x Hunter</td>
                 <td>5</td>
                 <td>Such an original anime and I love the main
                     characters
@@ -74,7 +88,9 @@
             <tr>
                 <td><a href="#">Edit</a></td>
                 <td><a href="#">Delete</a></td>
-                <td align="right">6</td>
+                <td align="right">1</td>
+                <td>wstr000</td>
+                <td>Attack on Titan</td>
                 <td>4</td>
                 <td>The later seasons confuse me, but still one of my
                     faves
@@ -87,6 +103,16 @@
         <form id="addRating">
             <legend><strong>Add Rating</strong></legend>
             <fieldset class="fields">
+                <label> User </label>
+                <select name="user" id="user">
+                    <option value="none" selected disabled hidden>Select User</option>
+                    <option value="1">Honestliz</option>
+                    <option value="2">Serexolik</option>
+                    <option value="3">Pebbles44</option>
+                    <option value="4">PeppermintP</option>
+                    <option value="5">wstr000</option>
+                    <option value="NULL"> <none> </option>
+                </select>
                 <label> Rating </label> <input type="number" name="rating">
                 <label> Review </label> <input type="text" name="review">
             </fieldset>
