@@ -4,19 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Crispyroll</title>
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <header>
-        <a href="index.html">Home</a>
-        <a href="animes.html">Animes</a>
-        <a href="ratings.html">Ratings</a>
-        <a href="studios.html">Studios</a>
-        <a href="users_animes.html">Users_Animes</a>
-        <h1>Users Animes</h1>
+        <nav>
+            <div class="logo"><a href="index.html">Crispyroll</a></div>
+            <div class ="nav-links">
+                <a href="users.html">Users</a>
+                <a href="animes.html">Animes</a>
+                <a href="studios.html">Studios</a>
+                <a href="ratings.html">Ratings</a>
+                <a href="users_animes.html">Users_Animes</a>
+            </div>
+        </nav>
     </header>
+    <section>
+    <h1>Users_Animes</h1>
     <div id="browse" style="display: block">
         <table border="1" cellpadding="5">
             <tr>
@@ -78,8 +84,10 @@
                 <label> Username </label> <input type="text" name="name">
                 <label> Email </label> <input type="text" name="population">
             </fieldset>
-            <input class="btn" type="submit" id="addAnime" value="Add an Anime">
-            <input class="btn" type="button" value="cancel">
+            <div class="btn-container">
+                <input class="btn" type="submit" id="addAnime" value="Add an Anime">
+                <input class="btn" type="button" value="cancel">
+            </div>
         </form>
     </div>
     <!--Update-->
@@ -93,8 +101,10 @@
                 <label> Studio </label> <input type="text" name="studio" value="NipponTV">
                 <label> Num Episodes </label> <input type="number" name="episodes" value="148">
             </fieldset>
-            <input class="btn" type="submit" id="UpdateSaveAnime" value="Save Update Anime">
-            <input class="btn" type="button" value="cancel">
+            <div class="btn-container">
+                <input class="btn" type="submit" id="UpdateSaveAnime" value="Save Update Anime">
+                <input class="btn" type="button" value="cancel">
+            </div>
         </form>
     </div><!-- update -->
     <!--Delete-->
@@ -108,9 +118,12 @@
                 <label> Title </label> Hunter x Hunter
 
             </fieldset>
-            <input class="btn" type="submit" id="DeleteAnime" value="Delete Anime">
-            <input class="btn" type="button" value="Cancel">
+            <div class="btn-container">
+                <input class="btn" type="submit" id="DeleteAnime" value="Delete Anime">
+                <input class="btn" type="button" value="Cancel">
+            </div>
         </form>
     </div><!-- delete -->
+    </section>
 </body>
 </html>

@@ -4,25 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Crispyroll</title>
     <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <header>
-        <a href="index.html">Home</a>
-        <a href="animes.html">Animes</a>
-        <a href="ratings.html">Ratings</a>
-        <a href="studios.html">Studios</a>
-        <a href="users_animes.html">Users_Animes</a>
-        <h1>Ratings</h1>
+        <nav>
+            <div class="logo"><a href="index.html">Crispyroll</a></div>
+            <div class ="nav-links">
+                <a href="users.html">Users</a>
+                <a href="animes.html">Animes</a>
+                <a href="studios.html">Studios</a>
+                <a href="ratings.html">Ratings</a>
+                <a href="users_animes.html">Users_Animes</a>
+            </div>
+        </nav>
     </header>
+    <section>
+    <h1>Ratings</h1>
     <div id="browse" style="display: block">
         <table border="1" cellpadding="5">
             <tr>
                 <th><a href="#">New</a></th>
                 <th></th>
-                <th>ID</th>
+                <th class="id-cell">ID</th>
                 <th>Rating</th>
                 <th>Review</th>
             </tr>
@@ -45,7 +51,7 @@
             <tr>
                 <td><a href="#">Edit</a></td>
                 <td><a href="#">Delete</a></td>
-                <td align="right">2</td>
+                <td align="right">3</td>
                 <td>5</td>
                 <td>Really sad but very well written and unique
                 </td>
@@ -53,14 +59,14 @@
             <tr>
                 <td><a href="#">Edit</a></td>
                 <td><a href="#">Delete</a></td>
-                <td align="right">2</td>
+                <td align="right">4</td>
                 <td>3</td>
                 <td>Season 1 was amazing, but season 2 was really bad
                 </td>
             <tr>
                 <td><a href="#">Edit</a></td>
                 <td><a href="#">Delete</a></td>
-                <td align="right">2</td>
+                <td align="right">5</td>
                 <td>5</td>
                 <td>Such an original anime and I love the main
                     characters
@@ -68,7 +74,7 @@
             <tr>
                 <td><a href="#">Edit</a></td>
                 <td><a href="#">Delete</a></td>
-                <td align="right">2</td>
+                <td align="right">6</td>
                 <td>4</td>
                 <td>The later seasons confuse me, but still one of my
                     faves
@@ -84,8 +90,10 @@
                 <label> Rating </label> <input type="number" name="rating">
                 <label> Review </label> <input type="text" name="review">
             </fieldset>
-            <input class="btn" type="submit" id="addRating" value="Add a Rating">
-            <input class="btn" type="button" value="cancel">
+            <div class="btn-container">
+                <input class="btn" type="submit" id="addRating" value="Add a Rating">
+                <input class="btn" type="button" value="cancel">
+            </div>
         </form>
     </div>
     <!--Update-->
@@ -98,8 +106,10 @@
                 <label> Rating </label> <input type="number" name="rating" value="5">
                 <label> Review </label> <input type="text" name="yearFounded" value="My favorite anime of all time!!">
             </fieldset>
-            <input class="btn" type="submit" id="UpdateSaveRating" value="Save Update Rating">
-            <input class="btn" type="button" value="Cancel">
+            <div class="btn-container">
+                <input class="btn" type="submit" id="UpdateSaveRating" value="Save Update Rating">
+                <input class="btn" type="button" value="Cancel">
+            </div>
         </form>
     </div><!-- update -->
     <!--Delete-->
@@ -113,10 +123,13 @@
                 <label> Rating Name </label> NipponTV
 
             </fieldset>
-            <input class="btn" type="submit" id="DeleteRating" value="Delete Rating">
-            <input class="btn" type="button" value="cancel">
+            <div class="btn-container">
+                <input class="btn" type="submit" id="DeleteRating" value="Delete Rating">
+                <input class="btn" type="button" value="cancel">
+            </div>
         </form>
     </div><!-- delete -->
+    </section>
 </body>
 
 </html>
