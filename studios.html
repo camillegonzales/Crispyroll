@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">Home</a>
+        <a href="animes.html">Animes</a>
+        <a href="ratings.html">Ratings</a>
+        <a href="studios.html">Studios</a>
+        <a href="users_animes.html">Users_Animes</a>
+        <h1>Studios</h1>
+    </header>
+    <div id="browse" style="display: block">
+        <table border="1" cellpadding="5">
+            <tr>
+                <th><a href="#">New</a></th>
+                <th></th>
+                <th>ID</th>
+                <th>Studio Name</th>
+                <th>Year Founded</th>
+            </tr>
+            <tr>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+                <td align="right">1</td>
+                <td>NipponTV</td>
+                <td>1952</td>
+            </tr>
+            <tr>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+                <td align="right">2</td>
+                <td>MAPPA</td>
+                <td>2011</td>
+            </tr>
+            <tr>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+                <td align="right">3</td>
+                <td>CloverWorks</td>
+                <td>2018</td>
+            </tr>
+        </table>
+        <p>&nbsp;</p>
+    </div>
+    <!--Insert-->
+    <div id="insert" style="display: block">
+        <form id="addStudio">
+            <legend><strong>Add Studios</strong></legend>
+            <fieldset class="fields">
+                <label> Username </label> <input type="text" name="name">
+                <label> Email </label> <input type="text" name="population">
+            </fieldset>
+            <input class="btn" type="submit" id="addStudio" value="Add a Studio">
+            <input class="btn" type="button" value="cancel">
+        </form>
+    </div>
+    <!--Update-->
+    <p>&nbsp;</p>
+    <div id="update" style="display: block">
+        <form id="updateStudio">
+            <legend><strong>Update Studio</strong></legend>
+            <fieldset class="fields">
+                <label>ID:</label> 1
+                <label> Studio Name </label> <input type="text" name="studio" value="NipponTV">
+                <label> Year Founded </label> <input type="number" name="yearFounded" value="1952">
+            </fieldset>
+            <input class="btn" type="submit" id="UpdateSaveStudio" value="Save Update Studio">
+            <input class="btn" type="button" value="cancel">
+        </form>
+    </div><!-- update -->
+    <!--Delete-->
+    <p>&nbsp;</p>
+    <div id="delete" style="display: block">
+        <form id="deleteStudio">
+            <legend><strong>Delete Studio</strong></legend>
+            <fieldset class="fields">
+                <p>Are you sure you wish to delete the following?</p>
+                <label>ID:</label> 1
+                <label> Studio Name </label> NipponTV
+
+            </fieldset>
+            <input class="btn" type="submit" id="DeleteStudio" value="Delete Studio">
+            <input class="btn" type="button" value="Cancel">
+        </form>
+    </div><!-- delete -->
+</body>
+</html>

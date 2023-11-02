@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">Home</a>
+        <a href="animes.html">Animes</a>
+        <a href="ratings.html">Ratings</a>
+        <a href="studios.html">Studios</a>
+        <a href="users_animes.html">Users_Animes</a>
+        <h1>Ratings</h1>
+    </header>
+    <div id="browse" style="display: block">
+        <table border="1" cellpadding="5">
+            <tr>
+                <th><a href="#">New</a></th>
+                <th></th>
+                <th>ID</th>
+                <th>Rating</th>
+                <th>Review</th>
+            </tr>
+            <tr>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+                <td align="right">1</td>
+                <td>5</td>
+                <td>My favorite anime of all time!!</td>
+            </tr>
+            <tr>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+                <td align="right">2</td>
+                <td>5</td>
+                <td>One of the best animes out there, the plot is so
+                    thought out and the characters are all brilliantly
+                    written</td>
+            </tr>
+            <tr>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+                <td align="right">2</td>
+                <td>5</td>
+                <td>Really sad but very well written and unique
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+                <td align="right">2</td>
+                <td>3</td>
+                <td>Season 1 was amazing, but season 2 was really bad
+                </td>
+            <tr>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+                <td align="right">2</td>
+                <td>5</td>
+                <td>Such an original anime and I love the main
+                    characters
+                </td>
+            <tr>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+                <td align="right">2</td>
+                <td>4</td>
+                <td>The later seasons confuse me, but still one of my
+                    faves
+                </td>
+        </table>
+        <p>&nbsp;</p>
+    </div>
+    <!--Insert-->
+    <div id="insert" style="display: block">
+        <form id="addRating">
+            <legend><strong>Add Rating</strong></legend>
+            <fieldset class="fields">
+                <label> Rating </label> <input type="number" name="rating">
+                <label> Review </label> <input type="text" name="review">
+            </fieldset>
+            <input class="btn" type="submit" id="addRating" value="Add a Rating">
+            <input class="btn" type="button" value="cancel">
+        </form>
+    </div>
+    <!--Update-->
+    <p>&nbsp;</p>
+    <div id="update" style="display: block">
+        <form id="updateRating">
+            <legend><strong>Update Rating</strong></legend>
+            <fieldset class="fields">
+                <label>ID:</label> 1
+                <label> Rating </label> <input type="number" name="rating" value="5">
+                <label> Review </label> <input type="text" name="yearFounded" value="My favorite anime of all time!!">
+            </fieldset>
+            <input class="btn" type="submit" id="UpdateSaveRating" value="Save Update Rating">
+            <input class="btn" type="button" value="Cancel">
+        </form>
+    </div><!-- update -->
+    <!--Delete-->
+    <p>&nbsp;</p>
+    <div id="delete" style="display: block">
+        <form id="deleteRating">
+            <legend><strong>Delete Rating</strong></legend>
+            <fieldset class="fields">
+                <p>Are you sure you wish to delete the following?</p>
+                <label>ID:</label> 1
+                <label> Rating Name </label> NipponTV
+
+            </fieldset>
+            <input class="btn" type="submit" id="DeleteRating" value="Delete Rating">
+            <input class="btn" type="button" value="cancel">
+        </form>
+    </div><!-- delete -->
+</body>
+
+</html>

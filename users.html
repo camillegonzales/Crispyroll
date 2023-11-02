@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">Home</a>
+        <a href="animes.html">Animes</a>
+        <a href="ratings.html">Ratings</a>
+        <a href="studios.html">Studios</a>
+        <a href="users_animes.html">Users_Animes</a>
+        <h1>Users</h1>
+    </header>
+    <div id="browse" style="display: block">
+        <table border="1" cellpadding="5">
+            <tr>
+                <th><a href="#">New</a></th>
+                <th></th>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+                <td align="right">1</td>
+                <td>Honestliz</td>
+                <td align="right">liz_re6@gmail.com</td>
+            </tr>
+            <tr>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+                <td align="right">2</td>
+                <td>Serexolik</td>
+                <td align="right">mparker22@gmail.com</td>
+            </tr>
+            <tr>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+                <td>3</td>
+                <td>Pebbles44</td>
+                <td align="right">seanmorg@yahoo.com</td>
+            </tr>
+            <tr>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+                <td>4</td>
+                <td>PeppermintP</td>
+                <td align="right">pmin873@gmail.com</td>
+            </tr>
+            <tr>
+                <td><a href="#">Edit</a></td>
+                <td><a href="#">Delete</a></td>
+                <td>3</td>
+                <td>wstr000</td>
+                <td align="right">lilyt01@yahoo.com</td>
+            </tr>
+        </table>
+        <p>&nbsp;</p>
+    </div>
+    <!--Insert-->
+    <div id="insert" style="display: block">
+        <form id="addUser">
+            <legend><strong>Add User</strong></legend>
+            <fieldset class="fields">
+                <label> Username </label> <input type="text" name="name">
+                <label> Email </label> <input type="text" name="population">
+            </fieldset>
+            <input class="btn" type="submit" id="addUser" value="Add a User">
+            <input class="btn" type="button" value="cancel">
+        </form>
+    </div>
+    <!--Update-->
+    <p>&nbsp;</p>
+    <div id="update" style="display: block">
+        <form id="updateUser">
+            <legend><strong>Update User</strong></legend>
+            <fieldset class="fields">
+                <label>ID:</label> 1
+                <label> Username </label> <input type="text" value="Honestliz" name="name">
+                <label> Email </label> <input type="text" name="population" value="liz_re6@gmail.com">
+            </fieldset>
+            <input class="btn" type="submit" id="UpdateSaveUser" value="Save Update User">
+            <input class="btn" type="button" value="cancel">
+        </form>
+    </div><!-- update -->
+    <!--Delete-->
+    <p>&nbsp;</p>
+    <div id="delete" style="display: block">
+        <form id="deleteUser">
+            <legend><strong>Delete User</strong></legend>
+            <fieldset class="fields">
+                <p>Are you sure you wish to delete the following?</p>
+                <label>ID:</label> 1
+                <label> Username </label> Honestliz
+
+            </fieldset>
+            <input class="btn" type="submit" id="DeleteUser" value="Delete User">
+            <input class="btn" type="button" value="Cancel">
+        </form>
+    </div><!-- delete -->
+</body>
+
+</html>
