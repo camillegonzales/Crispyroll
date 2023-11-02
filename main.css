@@ -31,6 +31,11 @@ section {
     margin-top: 3%
 }
 
+.home-section {
+    margin: 0 auto;
+    width: 100vh;
+}
+
 /* ========== NAVIGATION ========== */
 header {
     background-color: #f2ebdce7;
