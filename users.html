@@ -31,6 +31,7 @@
                 <th>ID</th>
                 <th>Username</th>
                 <th>Email</th>
+                <th>Delete</th>
             </tr>
             <tr>
                 <td><a href="#">Edit</a></td>
@@ -38,6 +39,9 @@
                 <td align="right">1</td>
                 <td>Honestliz</td>
                 <td align="right">liz_re6@gmail.com</td>
+                <td>
+                    <button onclick="deleteUser(1)">Delete</button>
+                </td>
             </tr>
             <tr>
                 <td><a href="#">Edit</a></td>
@@ -45,6 +49,9 @@
                 <td align="right">2</td>
                 <td>Serexolik</td>
                 <td align="right">mparker22@gmail.com</td>
+                <td>
+                    <button onclick="deleteUser(2)">Delete</button>
+                </td>
             </tr>
             <tr>
                 <td><a href="#">Edit</a></td>
@@ -52,6 +59,9 @@
                 <td align="right">3</td>
                 <td>Pebbles44</td>
                 <td align="right">seanmorg@yahoo.com</td>
+                <td>
+                    <button onclick="deleteUser(3)">Delete</button>
+                </td>
             </tr>
             <tr>
                 <td><a href="#">Edit</a></td>
@@ -59,6 +69,9 @@
                 <td align="right">4</td>
                 <td>PeppermintP</td>
                 <td align="right">pmin873@gmail.com</td>
+                <td>
+                    <button onclick="deleteUser(4)">Delete</button>
+                </td>
             </tr>
             <tr>
                 <td><a href="#">Edit</a></td>
@@ -66,6 +79,9 @@
                 <td align="right">5</td>
                 <td>wstr000</td>
                 <td align="right">lilyt01@yahoo.com</td>
+                <td>
+                    <button onclick="deleteUser(5)">Delete</button>
+                </td>
             </tr>
         </table>
         <p>&nbsp;</p>
@@ -100,23 +116,6 @@
             </div>
         </form>
     </div><!-- update -->
-    <!--Delete-->
-    <p>&nbsp;</p>
-    <div id="delete" style="display: block">
-        <form id="deleteUser">
-            <legend><strong>Delete User</strong></legend>
-            <fieldset class="fields">
-                <p>Are you sure you wish to delete the following?</p>
-                <label>ID:</label> 1
-                <label> Username </label> Honestliz
-
-            </fieldset>
-            <div class="btn-container">
-                <input class="btn" type="submit" id="DeleteUser" value="Delete User">
-                <input class="btn" type="button" value="Cancel">
-            </div>
-        </form>
-    </div><!-- delete -->
     </section>
 </body>
 

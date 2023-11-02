@@ -31,6 +31,7 @@
                 <th>ID</th>
                 <th>Studio Name</th>
                 <th>Year Founded</th>
+                <th>Delete</th>
             </tr>
             <tr>
                 <td><a href="#">Edit</a></td>
@@ -38,6 +39,9 @@
                 <td align="right">1</td>
                 <td>NipponTV</td>
                 <td>1952</td>
+                <td>
+                    <button onclick="deleteStudio(1)">Delete</button>
+                </td>
             </tr>
             <tr>
                 <td><a href="#">Edit</a></td>
@@ -45,6 +49,9 @@
                 <td align="right">2</td>
                 <td>MAPPA</td>
                 <td>2011</td>
+                <td>
+                    <button onclick="deleteStudio(2)">Delete</button>
+                </td>
             </tr>
             <tr>
                 <td><a href="#">Edit</a></td>
@@ -52,6 +59,9 @@
                 <td align="right">3</td>
                 <td>CloverWorks</td>
                 <td>2018</td>
+                <td>
+                    <button onclick="deleteStudio(3)">Delete</button>
+                </td>
             </tr>
         </table>
         <p>&nbsp;</p>
@@ -86,23 +96,6 @@
             </div>
         </form>
     </div><!-- update -->
-    <!--Delete-->
-    <p>&nbsp;</p>
-    <div id="delete" style="display: block">
-        <form id="deleteStudio">
-            <legend><strong>Delete Studio</strong></legend>
-            <fieldset class="fields">
-                <p>Are you sure you wish to delete the following?</p>
-                <label>ID:</label> 1
-                <label> Studio Name </label> NipponTV
-
-            </fieldset>
-            <div class="btn-container">
-                <input class="btn" type="submit" id="DeleteStudio" value="Delete Studio">
-                <input class="btn" type="button" value="Cancel">
-            </div>
-        </form>
-    </div><!-- delete -->
     </section>
 </body>
 </html>
