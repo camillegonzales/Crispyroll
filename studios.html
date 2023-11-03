@@ -11,18 +11,18 @@
 <body>
     <header>
         <nav>
-            <div class="logo"><a href="index.html">Crispyroll</a></div>
+            <div class="logo"><a href="index.html">CRISPYROLL</a></div>
             <div class ="nav-links">
                 <a href="users.html">Users</a>
                 <a href="animes.html">Animes</a>
-                <a href="studios.html">Studios</a>
+                <div class="highlight"><a href="studios.html">Studios</a></div>
                 <a href="ratings.html">Ratings</a>
                 <a href="users_animes.html">Users/Animes</a>
             </div>
         </nav>
     </header>
     <section>
-    <h1>Studios</h1>
+    <h1>STUDIOS</h1>
     <div id="browse" style="display: block">
         <table border="1" cellpadding="5">
             <tr>
@@ -32,7 +32,7 @@
                 <th>Delete</th>
             </tr>
             <tr>
-                <td align="right">1</td>
+                <td>1</td>
                 <td>NipponTV</td>
                 <td>1952</td>
                 <td>
@@ -40,7 +40,7 @@
                 </td>
             </tr>
             <tr>
-                <td align="right">2</td>
+                <td>2</td>
                 <td>MAPPA</td>
                 <td>2011</td>
                 <td>
@@ -48,7 +48,7 @@
                 </td>
             </tr>
             <tr>
-                <td align="right">3</td>
+                <td>3</td>
                 <td>CloverWorks</td>
                 <td>2018</td>
                 <td>
@@ -65,11 +65,11 @@
             <fieldset class="fields">
                 <label> Studio Name </label> <input type="text" name="name">
                 <label> Year Founded </label> <input type="text" name="population">
+                <div class="btn-container">
+                    <input class="btn" type="submit" id="addStudio" value="Add a Studio">
+                    <input class="btn" type="button" value="Cancel">
+                </div>
             </fieldset>
-            <div class="btn-container">
-                <input class="btn" type="submit" id="addStudio" value="Add a Studio">
-                <input class="btn" type="button" value="Cancel">
-            </div>
         </form>
     </div>
     <!--Update-->
@@ -80,13 +80,16 @@
             <fieldset class="fields">
                 <label> Studio Name </label> <input type="text" name="studio">
                 <label> Year Founded </label> <input type="number" name="yearFounded">
+                <div class="btn-container">
+                    <input class="btn" type="submit" id="UpdateSaveStudio" value="Save Update Studio">
+                    <input class="btn" type="button" value="Cancel">
+                </div>
             </fieldset>
-            <div class="btn-container">
-                <input class="btn" type="submit" id="UpdateSaveStudio" value="Save Update Studio">
-                <input class="btn" type="button" value="Cancel">
-            </div>
         </form>
     </div><!-- update -->
     </section>
 </body>
+<footer>
+    <p>&copy; 2023 Crispyroll</p>
+</footer>
 </html>

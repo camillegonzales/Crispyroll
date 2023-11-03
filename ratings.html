@@ -11,23 +11,23 @@
 <body>
     <header>
         <nav>
-            <div class="logo"><a href="index.html">Crispyroll</a></div>
+            <div class="logo"><a href="index.html">CRISPYROLL</a></div>
             <div class="nav-links">
                 <a href="users.html">Users</a>
                 <a href="animes.html">Animes</a>
                 <a href="studios.html">Studios</a>
-                <a href="ratings.html">Ratings</a>
+                <div class="highlight"><a href="ratings.html">Ratings</a></div>
                 <a href="users_animes.html">Users/Animes</a>
             </div>
         </nav>
     </header>
     <section>
-        <h1>Ratings</h1>
+        <h1>RATINGS</h1>
         <div id="browse" style="display: block">
             <table border="1" cellpadding="5">
                 <tr>
 
-                    <th class="id-cell">ID</th>
+                    <th>ID</th>
                     <th>User</th>
                     <th>Anime</th>
                     <th>Rating</th>
@@ -35,7 +35,7 @@
                     <th>Delete</th>
                 </tr>
                 <tr>
-                    <td align="right">1</td>
+                    <td>1</td>
 
                     <td>NULL</td>
                     <td>Hunter x Hunter</td>
@@ -46,7 +46,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td align="right">2</td>
+                    <td>2</td>
 
                     <td>Honestliz</td>
                     <td>Jujutsu Kaisen</td>
@@ -59,7 +59,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td align="right">3</td>
+                    <td>3</td>
                     <td>Honestliz</td>
                     <td>Terror in Resonance</td>
                     <td>5</td>
@@ -70,7 +70,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td align="right">4</td>
+                    <td>4</td>
                     <td>Serexolik</td>
                     <td>The Promised Neverland</td>
                     <td>3</td>
@@ -79,8 +79,9 @@
                     <td>
                         <button onclick="deleteRating(4)">Delete</button>
                     </td>
+                </tr>
                 <tr>
-                    <td align="right">5</td>
+                    <td>5</td>
                     <td>PeppermintP</td>
                     <td>Hunter x Hunter</td>
                     <td>5</td>
@@ -90,8 +91,9 @@
                     <td>
                         <button onclick="deleteRating(5)">Delete</button>
                     </td>
+                </tr>
                 <tr>
-                    <td align="right">6</td>
+                    <td>6</td>
                     <td>wstr000</td>
                     <td>Attack on Titan</td>
                     <td>4</td>
@@ -101,6 +103,7 @@
                     <td>
                         <button onclick="deleteRating(6)">Delete</button>
                     </td>
+                </tr>
             </table>
             <p>&nbsp;</p>
         </div>
@@ -122,11 +125,12 @@
                     <label> Anime </label> <input type="text" name="anime">
                     <label> Rating </label> <input type="number" name="rating">
                     <label> Review </label> <input type="text" name="review">
+                    <div class="btn-container">
+                        <input class="btn" type="submit" id="addRating" value="Add a Rating">
+                        <input class="btn" type="button" value="Cancel">
+                    </div>
                 </fieldset>
-                <div class="btn-container">
-                    <input class="btn" type="submit" id="addRating" value="Add a Rating">
-                    <input class="btn" type="button" value="Cancel">
-                </div>
+                
             </form>
         </div>
         <!--Update-->
@@ -148,13 +152,16 @@
                     <label> Anime </label> <input type="text" name="anime">
                     <label> Rating </label> <input type="number" name="rating">
                     <label> Review </label> <input type="text" name="review">
+                    <div class="btn-container">
+                        <input class="btn" type="submit" id="UpdateSaveRating" value="Save Update Rating">
+                        <input class="btn" type="button" value="Cancel">
+                    </div>
                 </fieldset>
-                <div class="btn-container">
-                    <input class="btn" type="submit" id="UpdateSaveRating" value="Save Update Rating">
-                    <input class="btn" type="button" value="Cancel">
-                </div>
+                
             </form>
     </section>
 </body>
-
+<footer>
+    <p>&copy; 2023 Crispyroll</p>
+</footer>
 </html>
