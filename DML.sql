@@ -97,7 +97,7 @@ AND anime_id = :anime_id_selected;
 
 /* ------------------- Ratings queries ------------------- */
 -- Select all Ratings
-SELECT Ratings.rating_id, Users.user_id, Animes.anime_id, Ratings.rating, Ratings.review 
+SELECT Ratings.rating_id, Users.user_name, Animes.title, Ratings.rating, Ratings.review 
 FROM Ratings
 INNER JOIN Users ON Ratings.user_id = Users.user_id
 INNER JOIN Animes ON Ratings.anime_id = Animes.anime_id;
