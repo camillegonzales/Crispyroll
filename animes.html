@@ -11,10 +11,10 @@
 <body>
     <header>
         <nav>
-            <div class="logo"><a href="index.html">Crispyroll</a></div>
+            <div class="logo"><a href="index.html">CRISPYROLL</a></div>
             <div class ="nav-links">
                 <a href="users.html">Users</a>
-                <a href="animes.html">Animes</a>
+                <div class="highlight"><a href="animes.html">Animes</a></div>
                 <a href="studios.html">Studios</a>
                 <a href="ratings.html">Ratings</a>
                 <a href="users_animes.html">Users/Animes</a>
@@ -22,7 +22,7 @@
         </nav>
     </header>
     <section>
-    <h1>Animes</h1>
+    <h1>ANIMES</h1>
     <div id="browse" style="display: block">
         <table border="1" cellpadding="5">
             <tr>
@@ -33,46 +33,46 @@
                 <th>Delete</th>
             </tr>
             <tr>
-                <td align="right">1</td>
+                <td>1</td>
                 <td>Hunter x Hunter</td>
                 <td>NipponTV</td>
-                <td align="right">148</td>
+                <td>148</td>
                 <td>
                     <button onclick="deleteAnime(1)">Delete</button>
                 </td>
             </tr>
             <tr>
-                <td align="right">2</td>
+                <td>2</td>
                 <td>Attack on Titan</td>
                 <td>MAPPA</td>
-                <td align="right">88</td>
+                <td>88</td>
                 <td>
                     <button onclick="deleteAnime(2)">Delete</button>
                 </td>
             </tr>
             <tr>
-                <td align="right">3</td>
+                <td>3</td>
                 <td>Terror in Resonance</td>
                 <td>MAPPA</td>
-                <td align="right">11</td>
+                <td>11</td>
                 <td>
                     <button onclick="deleteAnime(3)">Delete</button>
                 </td>
             </tr>
             <tr>
-                <td align="right">4</td>
+                <td>4</td>
                 <td>Jujutsu Kaisen</td>
                 <td>MAPPA</td>
-                <td align="right">24</td>
+                <td>24</td>
                 <td>
                     <button onclick="deleteAnime(4)">Delete</button>
                 </td>
             </tr>
             <tr>
-                <td align="right">5</td>
+                <td>5</td>
                 <td>The Promised Neverland</td>
                 <td>CloverWorks</td>
-                <td align="right">12</td>
+                <td>12</td>
                 <td>
                     <button onclick="deleteAnime(5)">Delete</button>
                 </td>
@@ -88,11 +88,11 @@
                 <label> Title </label> <input type="text" name="title">
                 <label> Studio </label> <input type="text" name="studio">
                 <label> Number of Episodes </label> <input type="number" name="episodes">
+                <div class="btn-container">
+                    <input class="btn" type="submit" id="addAnime" value="Add an Anime">
+                    <input class="btn" type="button" value="Cancel">
+                </div>
             </fieldset>
-            <div class="btn-container">
-                <input class="btn" type="submit" id="addAnime" value="Add an Anime">
-                <input class="btn" type="button" value="Cancel">
-            </div>
         </form>
     </div>
     <!--Update-->
@@ -104,13 +104,16 @@
                 <label> Title </label> <input type="text" name="title">
                 <label> Studio </label> <input type="text" name="studio">
                 <label> Number of Episodes </label> <input type="number" name="episodes">
+                <div class="btn-container">
+                    <input class="btn" type="submit" id="UpdateSaveAnime" value="Save Update Anime">
+                    <input class="btn" type="button" value="Cancel">
+                </div>
             </fieldset>
-            <div class="btn-container">
-                <input class="btn" type="submit" id="UpdateSaveAnime" value="Save Update Anime">
-                <input class="btn" type="button" value="Cancel">
-            </div>
         </form>
     </div><!-- update -->
     </section>
 </body>
+<footer>
+    <p>&copy; 2023 Crispyroll</p>
+</footer>
 </html>
