@@ -46,7 +46,7 @@ UPDATE Animes
 SET title = :title_Input, studio_id = :studio_id_from_dropdown, :num_episode_Input
 WHERE anime_id = :anime_id_to_update;
 
--- Delete Studio
+-- Delete Anime
 DELETE FROM Animes 
 WHERE anime_id = :anime_id_to_delete;
 
@@ -111,6 +111,6 @@ UPDATE Ratings
 SET user_id = user_id_Input, anime_id = :anime_id_from_dropdown, rating = :rating_Input, review = :review_Input
 WHERE rating_id = :rating_id_to_update;
 
--- Delete User
+-- Delete Rating
 DELETE FROM Ratings 
 WHERE rating_id = :rating_id_to_delete;
