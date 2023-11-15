@@ -19,7 +19,7 @@ VALUES (:studio_name_Input, :year_founded_Input);
 
 -- Update Studio
 UPDATE Studios 
-SET studio_name = :studio_name_Input, year_founded = :year_founded_Input
+SET year_founded = :year_founded_Input
 WHERE studio_id = :studio_id_to_update;
 
 -- Delete Studio
