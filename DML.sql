@@ -1,7 +1,7 @@
 -- Project Title: Crispyroll
 -- Group Name: Query Queens
 -- Group 50: Camille Gonzales, Jennifer Trainor
--- CS340: Project Step 3 Draft
+-- CS340: Project Step 4 Draft
 
 -- DATA MANIPULATION QUERIES: SELECT, INSERT, UPDATE and DELETE queries
 
